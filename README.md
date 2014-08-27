@@ -32,6 +32,13 @@ If you want to set up WiFi, grab yourself a USB Wifi dongle and enter the WiFi m
 $ wifi-menu -o
 ```
 
+In order to get the Wifi connection to activate automaticlly on boot, you'll need to use something like the following:
+```sh
+$ pacman -Syu wpa_actiond
+$ ls /etc/netctl/ 
+$ netctl enable PROFILE_IN_ETC_NETCTL
+```
+
 Since the image file may be out of date, you may as well run some updates.
 ```sh
 $ pacman -Syyu
