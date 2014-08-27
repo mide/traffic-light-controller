@@ -1,6 +1,8 @@
 Traffic Signal on Raspberry Pi
 ==============================
 
+![Finished product](http://i.imgur.com/YcQ4o0Ql.jpg)
+
 Things You'll Need
 ------------------
 - [Raspberry Pi Model B](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=Raspberry+Pi+Model+B)
@@ -52,7 +54,7 @@ $ passwd
 Wiring the Raspberry Pi to the Relay Board
 ------------------------------------------
 
-![test](http://developer-blog.net/wp-content/uploads/2013/09/raspberry-pi-rev2-gpio-pinout.jpg)
+![Raspberry PI Pinout Diagram](http://developer-blog.net/wp-content/uploads/2013/09/raspberry-pi-rev2-gpio-pinout.jpg)
 
 - **+5V** *(pin 2)* from the Raspberry Pi goes to the **VCC** of the relay board.
 - **Ground** *(pin 6)* from the Raspberry Pi goes to the **Ground** of the relay board.
