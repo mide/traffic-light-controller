@@ -97,7 +97,7 @@ Setting up the Uptime Watcher
 Now it's time to set up the uptime watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file.*
 ```sh
 $ pacman -Syu ruby
-$ git clone https://github.com/mide/traffic-light-controller.git
+$ git clone https://github.com/mide/traffic-light-controller.git # If not already done
 $ chmod +x traffic-light-controller/uptime-watcher.rb
 $ cp traffic-light-controller/uptime-watcher.rb /usr/bin/uptime-watcher
 ```
@@ -116,6 +116,6 @@ $ systemctl start cronie
 Usage and License
 -----------------
 
-This project is licensed under [the MIT License](LICENSE.txt), so feel free to use it for your company or home network. The only thing that will need to be changed is the `uptime-watcher.py`, since that has the display calculation logic.
+This project is licensed under [the MIT License](LICENSE.txt), so feel free to use it for your company or home network. The only thing that will need to be changed is the `uptime-watcher.rb`, since that has the display calculation logic.
 
 Made with :heart: for [Veracross](http://github.com/veracross) by [Mark Ide](http://github.com/mide). Made public with the [the MIT License](LICENSE.txt).
