@@ -37,7 +37,7 @@ $ wifi-menu -o
 In order to get the Wifi connection to activate automaticlly on boot, you'll need to use something like the following:
 ```sh
 $ pacman -Syu wpa_actiond
-$ ls /etc/netctl/ 
+$ ls /etc/netctl/
 $ netctl enable PROFILE_IN_ETC_NETCTL
 ```
 
@@ -94,12 +94,12 @@ $ # You can keep going, but that verifies the light-control script works.
 Setting up the Uptime Watcher
 -----------------------------
 
-Now it's time to set up the uptime watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project just randomly changes the lights.*
+Now it's time to set up the uptime watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file.*
 ```sh
-$ pacman -Syu python-lxml
+$ pacman -Syu ruby
 $ git clone https://github.com/mide/traffic-light-controller.git
-$ chmod +x traffic-light-controller/uptime-watcher.py
-$ cp traffic-light-controller/uptime-watcher.py /usr/bin/uptime-watcher
+$ chmod +x traffic-light-controller/uptime-watcher.rb
+$ cp traffic-light-controller/uptime-watcher.rb /usr/bin/uptime-watcher
 ```
 
 In order to make the state change automatically, you'll want to edit your crontab. You can do so by running `crontab -e`. The following will run `uptime-watcher` once a minute.
