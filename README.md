@@ -96,20 +96,29 @@ $ light-control yellow on
 $ # You can keep going, but that verifies the light-control script works.
 ```
 
-Setting up the Uptime Watcher
+Setting up the Status Watcher
 -----------------------------
 
-Now it's time to set up the uptime watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file.*
+Now it's time to set up the status watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file. Also, I chose to write the PagerDuty logic in Ruby, but you can do whatever you want; just be sure to make the appropriate adjustments in the following steps.*
 ```sh
 $ pacman -Syu ruby
-$ git clone https://github.com/mide/traffic-light-controller.git # If not already done
-$ chmod +x traffic-light-controller/uptime-watcher.rb
-$ cp traffic-light-controller/uptime-watcher.rb /usr/bin/uptime-watcher
+$ # If you already ran "git clone", you can skip the next line
+$ git clone https://github.com/mide/traffic-light-controller.git
+$ chmod +x traffic-light-controller/status-watcher.rb
+$ cp traffic-light-controller/status-watcher.rb /usr/bin/status-watcher
 ```
 
-In order to make the state change automatically, you'll want to edit your crontab. You can do so by running `crontab -e`. The following will run `uptime-watcher` once a minute.
+Linking With PagerDuty
+----------------------
 
-    * * * * * uptime-watcher
+If you have a PagerDuty account you're going to run the provided code, you'll need to do a little bit of configuration. If you're not on PagerDuty (or are opting not to use the provided code), you can skip this section.
+
+Automating the Status Watcher
+-----------------------------
+
+In order to make the state change automatically, you'll want to edit your crontab. You can do so by running `crontab -e`. The following will run `status-watcher` once a minute.
+
+    * * * * * status-watcher
 
 You may need to install and enable cron, depending on your setup.
 ```sh
@@ -121,6 +130,6 @@ $ systemctl start cronie
 Usage and License
 -----------------
 
-This project is licensed under [the MIT License](LICENSE.txt), so feel free to use it for your company or home network. The only thing that will need to be changed is the `uptime-watcher.rb`, since that has the display calculation logic.
+This project is licensed under [the MIT License](LICENSE.txt), so feel free to use it for your company or home network. The only thing that will need to be changed is the `status-watcher.rb`, since that has the display calculation logic.
 
 Made with :heart: for [Veracross](http://github.com/veracross) by [Mark Ide](http://github.com/mide). Made public with the [the MIT License](LICENSE.txt).
