@@ -114,7 +114,7 @@ $ cp traffic-light-controller/status-watcher.rb /usr/bin/status-watcher
 Linking With PagerDuty
 ----------------------
 
-If you have a PagerDuty account you're going to run the provided code, you'll need to do a little bit of configuration. If you're not on PagerDuty (or are opting not to use the provided code), you can skip this section.
+If you have a PagerDuty account and you're going to run the provided code, you'll need to do a little bit of configuration. If you're not on PagerDuty (or are opting not to use the provided code), you can skip this section.
 
 If you haven't done so already, generate a new read-only API Key for your traffic light (you can see your API Keys by clicking "API Access" in the PagerDuty menu).
 
