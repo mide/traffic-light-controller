@@ -16,7 +16,8 @@ Things You'll Need
 - [Traffic Light](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=Traffic+Light)
 - [4GB+ SD Card](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=4GB+SD+Card)
 - [Relay Board](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=Relay+Board) ([The one I used](http://www.amazon.com/gp/product/B0057OC5O8/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1))
-- For setup you'll need an [HDMI Cable](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=HDMI+Cable) (or [RCA Cable](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=RCA+Cable)) and a [USB Keyboard](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=USB+Keyboard).
+- For setup you'll need an [HDMI Cable](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=HDMI+Cable) (or [RCA Cable](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=RCA+Cable)) and a [USB Keyboard](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=USB+Keyboard)
+- For [PagerDuty](http://www.pagerduty.com) support, you'll need an account and a read-only API key
 
 Setting up the Raspberry Pi
 ---------------------------
