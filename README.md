@@ -99,7 +99,10 @@ $ # You can keep going, but that verifies the light-control script works.
 Setting up the Status Watcher
 -----------------------------
 
-Now it's time to set up the status watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction. *The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file. Also, I chose to write the PagerDuty logic in Ruby, but you can do whatever you want; just be sure to make the appropriate adjustments in the following steps.*
+Now it's time to set up the status watcher module. **This logic is application specific**, so this is the part you'll need to change to match your setup. I've documented what I did to get you on the right direction.
+
+The default file that comes with this project can link to a [PagerDuty](http://www.pagerduty.com) account. If you don't use PagerDuty, you'll need to rewrite this file. Also, I chose to write the PagerDuty logic in Ruby, but you can do whatever you want; just be sure to make the appropriate adjustments in the following steps.
+
 ```sh
 $ pacman -Syu ruby
 $ # If you already ran "git clone", you can skip the next line
