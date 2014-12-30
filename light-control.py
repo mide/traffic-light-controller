@@ -41,4 +41,3 @@ GPIO.setwarnings(False)
 
 # Trigger the GPIO output
 GPIO.setup(pin, GPIO.OUT, initial=state)
-GPIO.output(pin, state)
