@@ -7,8 +7,15 @@ require "json"
 @pagerduty_url       = 'https://yourname.pagerduty.com'
 @pagerduty_api_token = '123ABC'
 
+# Memoizes get_number_of_incidents
 def number_of_incidents(status)
-  return unless [nil, "resolved", "acknowledged", "triggered"].include? status
+  @_number_of_incidents ||= get_number_of_incidents(status)
+end
+
+# Always performs a GET request, no caching
+def get_number_of_incidents(status)
+  return -1 unless [nil, "resolved", "acknowledged", "triggered"].include? status
+
   root_ca      = '/etc/ssl/certs'
   uri          = URI.parse "#{@pagerduty_url}/api/v1/incidents/count"
   http         = Net::HTTP.new(uri.host, uri.port)
