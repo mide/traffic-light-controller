@@ -50,6 +50,8 @@ def has_resolved?
   number_of_incidents("resolved") > 0
 end
 
+# Light Control Logic
+
 if has_triggered?
   system("light-control red on")
   system("light-control yellow off")
