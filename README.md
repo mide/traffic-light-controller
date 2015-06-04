@@ -1,12 +1,14 @@
 Traffic Signal on Raspberry Pi
 ==============================
 
-![Finished product](http://i.imgur.com/YcQ4o0Ql.jpg)
+![Finished product](https://i.imgur.com/85DE6UCl.jpg)
 
 Motivations
 -----------
 
 Some time ago, I heard about [GitHub](http://www.github.com/) using a traffic light to display their continuous integration system (read more [here](http://urbanhonking.com/ideasfordozens/2010/05/19/the_github_stoplight/)) and I thought it would be a great idea for uptime monitoring or service status. My company uses [PagerDuty](http://www.pagerduty.com) as an aggregate for all our monitoring services (like [NewRelic](http://www.newrelic.com), [Wembon](http://www.webmon.com), etc). Thankfully, PagerDuty has a super simple API that made the software part of this project trivial. I wanted to try to make sure my efforts could benefit someone else, so I posted my work on here under [the MIT License](LICENSE.txt).
+
+This repository is where the code lives along with this small guide. For a detailed writeup of the journey I took, check out [my blog](http://www.mide.io/2015/04/20/server-traffic-light.html).
 
 Things You'll Need
 ------------------
