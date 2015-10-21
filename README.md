@@ -147,4 +147,4 @@ Usage and License
 
 This project is licensed under [the MIT License](LICENSE.txt), so feel free to use it for your company or home network. The only thing that will need to be changed is the `status-watcher.rb`, since that has the display calculation logic.
 
-Made with :heart: for [Veracross](http://github.com/veracross) by [Mark Ide](http://github.com/mide). Made public with the [the MIT License](LICENSE.txt).
+Made with :heart: by [Mark Ide](http://github.com/mide). Made public with the [the MIT License](LICENSE.txt).
