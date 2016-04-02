@@ -1,6 +1,8 @@
 Traffic Signal on Raspberry Pi
 ==============================
 
+[![GitHub issues](https://img.shields.io/github/issues/mide/traffic-light-controller.svg?style=plastic)](https://github.com/mide/traffic-light-controller/issues) [![GitHub stars](https://img.shields.io/github/stars/mide/traffic-light-controller.svg?style=plastic)](https://github.com/mide/traffic-light-controller/stargazers) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/mide/traffic-light-controller/master/LICENSE.txt)
+
 ![Finished product](https://i.imgur.com/85DE6UCl.jpg)
 
 Motivations
